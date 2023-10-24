@@ -26,9 +26,9 @@ function exibirTexto(index) {
 }
 
 
-for (let i = 0; i < btnArrow.length; i++) {
+for (let i = 0; i < dropdown.length; i++) {
 
-    btnArrow[i].addEventListener('click', () => {
+    dropdown[i].addEventListener('click', () => {
         exibirTexto(i)
     })
 
