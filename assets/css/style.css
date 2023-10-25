@@ -49,6 +49,10 @@ main {
     z-index: 2
 }
 
+.image__content_mobile{
+    display: none;
+}
+
 /* FIM *image__content* */
 
 
@@ -110,17 +114,39 @@ article {
 /* FIM DROPDOWN */
 /* FIM *ARTICLE* */
 
-/* MEDIA QUERIES */
 
+/* MEDIA QUERIES */
 @media only screen and (max-width: 970px) {
 
     main{
-        max-width: 500px;
+        max-width: 400px;
+        height: 600px;
         margin: 5%;
     }
 
-    #woman{
+    .image__content_desktop{
         display: none;
+    }
+
+    .image__content_mobile{
+        display: flex;
+        position: absolute;
+        margin: auto;
+        top: 20px;
+        z-index: 2;
+    }
+
+    article {
+        padding: 5%;
+        position: absolute;
+        right: -130px;
+        top: 80px;
+        width: 500px;
+        
+    }
+
+    .title__article{
+        margin: 10% 25%;
     }
 
 }
